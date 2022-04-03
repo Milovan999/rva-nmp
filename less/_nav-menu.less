@@ -1,0 +1,137 @@
+@import "_screen-variable";
+
+@menu-color: hsl(240, 100%, 40%);
+@hover-color: red;
+@color-text: #fff;
+
+.width_height(@width,@height) {
+  width: @width;
+  height: @height;
+}
+
+.header-menu {
+  .width_height(100%,60px);
+  background-color: @menu-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media @sw {
+    .width_height(100%,120px);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  @media @xs {
+    .width_height(100%,120px);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  @media @sm {
+    .width_height(100%,120px);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  @media @md {
+    .width_height(100%,120px);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  @media @lg {
+    .width_height(100%,60px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  @media @xl {
+    .width_height(100%,60px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  &-brand {
+    .width_height(50px, 50px);
+    border-radius: 50px;
+    justify-content: center;
+    margin: 10px;
+  }
+  &-title {
+    padding: 20px 0 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @color-text;
+    @media @sw {
+      font-size: 16px;
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+    @media @xs {
+      font-size: 16px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+    @media @sm {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+    @media @md {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+    @media @lg {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+    @media @xl {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+  }
+}
+.nav {
+  &-list {
+    display: flex;
+    list-style-type: none;
+  }
+  &-link {
+    text-transform: uppercase;
+    margin: 0 10px;
+    color: @color-text;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      color: @hover-color;
+      text-decoration: underline;
+    }
+    @media @sw {
+      font-size: 10px;
+    }
+    @media @xs {
+      font-size: 16px;
+    }
+    @media @sm {
+      font-size: 20px;
+    }
+    @media @md {
+      font-size: 20px;
+    }
+    @media @lg {
+      font-size: 20px;
+    }
+    @media @xl {
+      font-size: 20px;
+    }
+  }
+}
