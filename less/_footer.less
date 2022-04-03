@@ -1,0 +1,35 @@
+.width_height(@width,@height) {
+  width: @width;
+  height: @height;
+}
+.footer {
+  .width_height(100%, 60px);
+  background-color: hsl(240, 100%, 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-copyright {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    @media @sw {
+      font-size: 7px;
+    }
+    @media @xs {
+      font-size: 16px;
+    }
+    @media @sm {
+      font-size: 20px;
+    }
+    @media @md {
+      font-size: 20px;
+    }
+    @media @lg {
+      font-size: 20px;
+    }
+    @media @xl {
+      font-size: 20px;
+    }
+  }
+}
