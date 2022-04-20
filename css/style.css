@@ -687,6 +687,78 @@ body {
     font-size: 20px;
   }
 }
+.form-container {
+  padding: 50px;
+  height: 670px;
+}
+fieldset {
+  border: 0px solid blue;
+  color: white;
+}
+fieldset legend {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+#form {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#form-fname {
+  height: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+#form-lname {
+  height: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+#form-email {
+  height: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+#form-textarea {
+  height: 150px;
+  border-radius: 15px;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 25px;
+}
+.button-submit {
+  width: 25%;
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid blue;
+  background-color: #333;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.button-submit:hover {
+  background-color: blue;
+}
+.button-clear {
+  width: 25%;
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid blue;
+  background-color: #333;
+  letter-spacing: 2px;
+}
+.button-clear:hover {
+  background-color: blue;
+}
 @media screen and (max-width: 767px) {
 }@media (min-width: 768px) {
 }.series-1-section-btn {
