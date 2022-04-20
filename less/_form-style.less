@@ -1,0 +1,77 @@
+.form-container {
+  padding: 50px;
+  height: 670px;
+}
+
+.height-radius(@height,@border-radius) {
+  height: @height;
+  border-radius: @border-radius;
+}
+
+fieldset {
+  border: 0px solid blue;
+  color: white;
+
+  legend {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+#form {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  &-fname {
+    .height-radius(50px,15px);
+    text-align: center;
+  }
+  &-lname {
+    .height-radius(50px,15px);
+    text-align: center;
+  }
+  &-email {
+    .height-radius(50px,15px);
+    text-align: center;
+  }
+  &-textarea {
+    .height-radius(150px,15px);
+  }
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 25px;
+  &-submit {
+    width: 25%;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid blue;
+    background-color: #333;
+    letter-spacing: 2px;
+    font-size: 16px;
+    &:hover {
+      background-color: blue;
+    }
+  }
+  &-clear {
+    width: 25%;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid blue;
+    background-color: #333;
+    letter-spacing: 2px;
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
