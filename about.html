@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon/icons8-bmw-96.png" type="image/x-icon" />
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-menu">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="" class="logo-brand" />
+        <p class="logo-title">BMW Catalog 2022</p>
+        <span id="date"></span>
+      </div>
+      <div class="navigation-menu">
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <video width="100%" autoplay muted loop id="bmw-video">
+      <source src="video/bmw-m-initiation-.mp4" type="video/mp4" />
+    </video>
+    <div class="content-about">
+      <h1 class="content-about-heading">BMW M Performance</h1>
+      <p class="content-about-text">
+        BMW M ("M" for "motorsport") was initially created to facilitate BMW's
+        racing program, which was very successful in the 1960s and 1970s. As
+        time passed, BMW M began to supplement BMW's vehicle portfolio with
+        specially modified higher trim models, for which they are now most known
+        by the general public. These M-badged cars traditionally include
+        modified engines, transmissions, suspensions, interior trims,
+        aerodynamics, and exterior modifications to set them apart from their
+        counterparts. All M models are tested and tuned at BMW's private
+        facility at the Nürburgring racing circuit in Germany.
+      </p>
+      <button id="myBtn" onclick="playPause()">Pause</button>
+    </div>
+    <div class="footer">
+      <p class="footer-copyright">
+        &copy; Copyright 2022&nbsp;by Milovan Grbić
+      </p>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

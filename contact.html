@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon/icons8-bmw-96.png" type="image/x-icon" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-menu">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="" class="logo-brand" />
+        <p class="logo-title">BMW Catalog 2022</p>
+        <span id="date"></span>
+      </div>
+      <div class="navigation-menu">
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="form-container">
+      <fieldset>
+        <legend>Contact us:</legend>
+        <form name="form" id="form" action="/">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            name="fname"
+            id="form-fname"
+            placeholder="Your First Name"
+          />
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            name="lname"
+            id="form-lname"
+            placeholder="Your Last Name"
+          />
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="form-email"
+            placeholder="example@gmail.com"
+          />
+          <label for="comment">Comment:</label>
+          <textarea
+            name="comment"
+            placeholder="Comment"
+            id="form-textarea"
+          ></textarea>
+          <div class="button">
+            <button
+              type="button"
+              value="Submit"
+              id="buttonSubmit"
+              class="button-submit"
+            >
+              Submit
+            </button>
+
+            <button
+              type="button"
+              value="Clear"
+              id="buttonClear"
+              class="button-clear"
+            >
+              Clear
+            </button>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+    <div class="footer">
+      <p class="footer-copyright">
+        &copy; Copyright 2022&nbsp;by Milovan Grbić
+      </p>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
